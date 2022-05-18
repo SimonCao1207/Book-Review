@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card text-center" id="wrapper">
+            <div class="card-header">Find your book</div>
+            <div class="card-body">
+                <form method="POST">
+                    <input class="form-control" name="title" type="text" placeholder="title" style="font-size: 1.5rem;">
+                    <br>
+                    <input class="form-control" name="year" type="datetime" placeholder="year" style="font-size: 1.5rem;">
+                    <button type="submit" class="btn btn-primary" style="width:100%; font-size: 2rem; margin-top: 25px; "> Search </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #wrapper {
+            margin: 50px auto 50px auto;
+            width: 500px;
+        }
+        #wrapper2 {
+            margin: 50px auto 50px auto;
+        }
+        body {
+            font-size: 2rem;
+        }
+        
+    </style>
+</body>
+</html>
+{% endblock %}

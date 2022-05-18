@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Books</h3>
+<a href="/books" class="btn btn-danger btn-sm" style="margin-bottom: 10px;">
+    <i class="glyphicon glyphicon-backward"></i>
+    Back to previous page
+</a>
+{% for book in results %}
+<div class="media">
+    <a href="/books/{{book.id}}">
+    <div class="media-left">
+        <img src="http://placekitten.com/g/128/192">
+    </div>
+    <div class="media-body">
+        <h4>{{book.title}}</h4>
+        <p>{{book.author}}</p>
+    </div>
+    </a>
+</div>
+{% else %}
+
+<p style="font-weight: bold; font-size: large;">No books found</p>
+{% endfor %}
+
+{% if next_page_token %}
+<nav>
+    <ul class="pager">
+    <li><a href="?page_token={{next_page_token}}">More</a></li>
+    </ul>
+</nav>
+{% endif %}
+{% endblock %}
+    
