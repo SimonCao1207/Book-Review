@@ -27,9 +27,9 @@ Search Bar         |  Search result
 
 ## Report
 
-Detail can be find [here](https://drive.google.com/file/d/1EZRQxMxSF-IAk9wVg1BBK2UAu3oAa-DA/view?usp=sharing)
+Detail report of the web app can be find [here](https://drive.google.com/file/d/1EZRQxMxSF-IAk9wVg1BBK2UAu3oAa-DA/view?usp=sharing)
 
-Throughout this homework, multiple technologies are used: 
+Throughout this assignment, multiple technologies are used: 
 -   Google Cloud SQL (for the database)
 - Google App Engine (for hosting the Web application)
 - Flask (for the Web application)
